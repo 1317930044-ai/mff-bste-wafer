@@ -1,0 +1,20 @@
+{
+  "seed": 42,
+  "jobs": 2,
+  "split_fractions": [0.6, 0.2, 0.2],
+  "modes": {
+    "quick": {"per_class_cap": 90, "n_estimators": 24, "boost_iterations": 24, "folds": 3, "radon_grid": 28, "angles": 12},
+    "standard": {"per_class_cap": 3500, "n_estimators": 100, "boost_iterations": 90, "folds": 3, "radon_grid": 40, "angles": 18},
+    "full": {"per_class_cap": 0, "n_estimators": 180, "boost_iterations": 160, "folds": 5, "radon_grid": 48, "angles": 18}
+  },
+  "model_params": {
+    "decision_tree": {"max_depth": 12, "min_samples_leaf": 3},
+    "random_forest": {"max_depth": 20, "min_samples_leaf": 2},
+    "extra_trees": {"max_depth": 24, "min_samples_leaf": 2},
+    "hist_gradient": {"max_leaf_nodes": 23, "learning_rate": 0.12, "min_samples_leaf": 10},
+    "ada_boost": {"learning_rate": 0.6},
+    "xgboost": {"max_depth": 6, "learning_rate": 0.1},
+    "lightgbm": {"num_leaves": 31, "learning_rate": 0.1},
+    "catboost": {"depth": 6, "learning_rate": 0.1}
+  }
+}
