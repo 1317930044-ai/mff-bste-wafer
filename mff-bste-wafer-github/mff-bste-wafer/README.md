@@ -1,6 +1,6 @@
 # 晶圆缺陷识别 · MFF-BSTE
 
-《人工智能导论》课程项目。输入半导体晶圆的离散晶粒状态图，在普通 CPU 上提取空间、几何、Radon、纹理和投影特征，再用决策树及其集成模型识别缺陷。命令行、Streamlit 网页和 Tkinter 桌面程序共用输入校验和推理代码。
+输入半导体晶圆的离散晶粒状态图，上提取空间、几何、Radon、纹理和投影特征，再用决策树及其集成模型识别缺陷。命令行、Streamlit 网页和 Tkinter 桌面程序共用输入校验和推理代码。
 
 - `defect8` 识别 Center、Donut、Edge-Loc、Edge-Ring、Loc、Random、Scratch、Near-full 八种缺陷。
 - `all9` 在八类缺陷上增加 None 正常类。
@@ -8,7 +8,7 @@
 
 ## 1. 下载源码与安装
 
-在 GitHub 仓库页选 **Code → Download ZIP**，解压后在包含 `main.py` 的目录打开 Windows PowerShell。推荐 64 位 Python 3.11 或 3.12，使用桌面端时安装 Python 的 Tcl/Tk 组件。所有命令都从项目根目录运行。
+**Code → Download ZIP**，解压后在包含 `main.py` 的目录打开 Windows PowerShell。推荐64位Python 3.11或3.12使用桌面端时安装Python的Tcl/Tk组件。所有命令都从项目根目录运行。
 
 ```powershell
 py -3.11 -m venv .venv
